@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Animación de salida del contenido inicial */
+@keyframes slideLeft {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+
+
+/* Animación de entrada del nuevo contenido */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* Ocultar contenido por defecto */
+.hidden {
+    display: none;
+}
+
+
+/* Aplicar animaciones */
+.fade-out {
+    animation: slideLeft 0.7s forwards;
+}
+
+
+.fade-in {
+    display: flex !important;
+    animation: fadeIn 0.7s forwards;
+}
+.logo {
+    max-width: 30%;  /* La imagen no será más grande que el 60% del ancho del teléfono */
+    height: auto;  /* Mantiene la proporción */
+    margin-top: 140px; /* Espacio arriba */
+    animation: float 3s infinite ease-in-out;
+    margin-left: 500px;
+   
+}
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left:600px ;
+}
+
+
+.purple {
+    color: #8A2BE2;
+}
+
+
+.subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+    margin-left: 620px;
+}
+
+
+#startBtn {
+    background: linear-gradient(135deg, #8A2BE2, #DA70D6);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    margin-top: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-left: 660px;
+}
+
+
+#startBtn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 5px 15px rgba(138, 43, 226, 0.5);
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+
+/* .date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.dateRight {
+    display: flex;
+    align-items: center;
+   
+}
+
+
+#dateNumber {
+    font-size: 50px;
+    /* top: 40px;
+    position: relative;
+    left: -120px; */
+
+
+
+
+/* #dateText {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+
+#dateMonth,
+#dateNumber{
+    margin-left: 270px;
+    position: relative;
+    font-weight: bold;
+    top: 45px;
+    display: inline;
+}
+#dateText  {
+    font-weight: bold;
+    margin-left: -290px;
+    top: 5px;
+    position: relative;
+    display: inline;
+}
+
+
+#dateMonth,
+#dateYear {
+    margin-left: -200px;
+    font-size: 20px;
+    top: 45px;
+    position: relative;
+    display: flex;
+}  */
+.menu{
+    color: #8A2BE2;
+    margin-top: 800px;
+    margin-left: -300px;
+}
+#barra{
+    margin-top: -20px;
+    position: relative;
+    margin-left:330px ;
+    border-radius: 10px;
+    width: 250px;
+    height: 25px;
+    border: 1px solid black;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 100px;   
+}
+
+
+.menu-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f9f9f9;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 160px;
+    height: 130px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin-left: 400px;
+    margin: 0;
+}
+
+
+.menu-btn img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+
+.menu-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+h3{
+    margin-top: -80px;
+    position: relative;
+    margin-left: 330px;
+    font-size: 28px;
+}
+#corazon{
+    margin-top: 200px;
+    position: relative;
+}
