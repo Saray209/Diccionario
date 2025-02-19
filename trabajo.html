@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CODE Dictionary</title>
-    <link rel="stylesheet" href="trabajo.css">
+    <link rel="stylesheet" href="index.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -19,60 +19,74 @@
          
             <!-- Contenido Principal Oculto al Inicio -->
             <div class="main-content hidden" id="mainContent">
-               
-                 <!-- <header>
-                    <!- fecha -->
-                    <!-- <div class="dateRight">
-                        <div id="dateNumber"></div>
-                        <div>
-                            <div id="dateMonth"></div>
-                            <div id="dateYear"></div>
-                        </div>
-                    </div>
-                    <div id="dateText"></div> -->
-                    <div class="menu">&#9776;</div>
+                    <!-- <div class="menu">&#9776;</div> -->
                 </header>
                  <main>
                     <!-- barra de busqueada -->
-                    <input type="text" id="barra" placeholder=" Buscar">
                     <h3><span class="purple">CODE</span> Dictionary</h3>
-                    <div class="menu">
-                        <button class="menu-btn" onclick="navigateTo('frameworks.html')">
-                            <img src="img/descarga-removebg-preview.png" alt="Frameworks">
-                            <span>Frameworks</span>
-                        </button>
-                        <button class="menu-btn" onclick="navigateTo('atajos.html')">
-                            <img src="img/at5ajos-removebg-preview.png" alt="Atajos y comandos">
-                            <span>Atajos</span>
-                        </button>
-                        <button class="menu-btn" onclick="navigateTo('errores.html')">
-                            <img src="img/errores-removebg-preview.png" alt="Errores comunes">
-                            <span>Errores</span>
-                        </button>
-                        <button class="menu-btn" onclick="navigateTo('codigo.html')">
-                            <img src="img/pixelcut-export-removebg-preview.png" alt="Código Aleatorio">
-                            <span>Código Aleatorio</span>
-                        </button>
-                        <button class="menu-btn" onclick="navigateTo('consejos.html')">
-                            <img src="img/tips.png" alt="Consejos">
-                            <span>Consejos</span>
-                        </button>
-                        <button class="menu-btn" onclick="navigateTo('desafios.html')">
-                            <img src="img/p-removebg-preview.png" alt="Código desafío">
-                            <span>Codigo Desafío</span>
-                        </button>
+                    <div class="search-container">
+                        <input type="text" id="barra" placeholder="Search">
+                        <button id="corazon"><i class='bx bxs-heart'></i></button>
                     </div>
-                     <footer>
-                        <nav>
-                             <button id="corazon"><i class='bx bxs-heart'></i></button>
-
-                        </nav> 
-                    </footer>  
+                     <div class="menu-container">
+                        <div class="menu">
+                            <button class="menu-btn" onclick="navigateTo('frameworks.html')">
+                                <img src="img/react.png" alt="Frameworks">
+                                <span>Frameworks</span>
+                            </button>
+                            <button class="menu-btn" onclick="navigateTo('atajos.html')">
+                                <img src="img/at5ajos-removebg-preview.png" alt="Atajos y comandos">
+                                <span>Atajos y comandos</span>
+                            </button>
+                            <button class="menu-btn" onclick="navigateTo('errores.html')">
+                                <img src="img/errores-removebg-preview.png" alt="Errores comunes">
+                                <span>Errores comunes</span>
+                            </button>
+                            <button class="menu-btn" onclick="navigateTo('codigo.html')">
+                                <img src="img/php.jpeg" alt="Código Aleatorio">
+                                <span>Código Aleatorio</span>
+                            </button>
+                            <button class="menu-btn" onclick="navigateTo('consejos.html')">
+                                <img src="img/tips.png" alt="Consejos">
+                                <span>Consejos</span>
+                            </button>
+                            <button class="menu-btn" onclick="navigateTo('desafios.html')">
+                                <img src="img/p-removebg-preview.png" alt="Código desafío">
+                                <span>Código desafío</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="content" id="content">
+                        <div class="content-section" id="frameworks">
+                            <h2>Frameworks</h2>
+                            <p>Contenido sobre frameworks.</p>
+                        </div>
+                        <div class="content-section" id="atajos">
+                            <h2>Atajos y Comandos</h2>
+                            <p>Contenido sobre atajos y comandos.</p>
+                        </div>
+                        <div class="content-section" id="errores">
+                            <h2>Errores Comunes</h2>
+                            <p>Contenido sobre errores comunes.</p>
+                        </div>
+                        <div class="content-section" id="codigo">
+                            <h2>Código Aleatorio</h2>
+                            <p>Contenido sobre código aleatorio.</p>
+                        </div>
+                        <div class="content-section" id="consejos">
+                            <h2>Consejos</h2>
+                            <p>Contenido sobre consejos.</p>
+                        </div>
+                        <div class="content-section" id="desafios">
+                            <h2>Código Desafío</h2>
+                            <p>Contenido sobre código desafío.</p>
+                        </div>
+                    </div> 
                 </div>
-    </div>
+    </div> 
 
 
-    <script src="trabajo.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
 
