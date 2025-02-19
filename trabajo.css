@@ -245,3 +245,52 @@ h3{
 .content-section.active {
     display: block;
 }
+
+.framework-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    color: #6a1b9a;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+    text-align: justify;
+}
+
+.details, .resources {
+    margin-top: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f1f1f1;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+a {
+    color: #6a1b9a;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
