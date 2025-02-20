@@ -246,51 +246,38 @@ h3{
     display: block;
 }
 
-.framework-container {
-    width: 80%;
-    margin: 0 auto;
+/*codigo aleatorio */
+
+
+.containe {
+    text-align: center;
+    border: 2px solid #8a2be2;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    background-color: #f9f9f9;
 }
 
 h1 {
-    color: #6a1b9a;
-    text-align: center;
+    color: #8a2be2;
 }
 
-p {
-    font-size: 16px;
-    color: #333;
-    text-align: justify;
-}
-
-.details, .resources {
-    margin-top: 20px;
-}
-
-h2 {
-    color: #333;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    background-color: #f1f1f1;
-    margin: 5px 0;
-    padding: 10px;
+button {
+    background-color: #8a2be2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
-a {
-    color: #6a1b9a;
-    text-decoration: none;
+button:hover {
+    background-color: #732d91;
 }
 
-a:hover {
-    text-decoration: underline;
+.code-display {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #8a2be2;
 }
+ 

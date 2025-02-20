@@ -79,3 +79,27 @@ const renderOrderedTasks = () => {
 
 setDate();
 
+//sesion de codigo aleatorio 
+const generateBtn = document.getElementById('generateBtn');
+const codeDisplay = document.getElementById('codeDisplay');
+const codeExplanation = document.getElementById('codeExplanation');
+
+// Array de códigos y sus explicaciones
+const codes = [
+    { code: 'HTML', explanation: 'Lenguaje de marcado de hipertexto utilizado para crear páginas web.' },
+    { code: 'CSS', explanation: 'Lenguaje de hojas de estilo en cascada utilizado para diseñar páginas web.' },
+    { code: 'JS', explanation: 'JavaScript, un lenguaje de programación utilizado para crear contenido web dinámico.' },
+    { code: 'Python', explanation: 'Lenguaje de programación de alto nivel y propósito general.' },
+    { code: 'SQL', explanation: 'Lenguaje de consulta estructurada utilizado para gestionar bases de datos.' }
+];
+
+// Función para generar un código aleatorio
+function generateRandomCode() {
+    const randomIndex = Math.floor(Math.random() * codes.length);
+    const randomCode = codes[randomIndex];
+    codeDisplay.textContent = randomCode.code;
+    codeExplanation.textContent = randomCode.explanation;
+}
+
+// Evento de clic para el botón de generar código
+generateBtn.addEventListener('click', generateRandomCode);
