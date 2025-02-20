@@ -1,31 +1,31 @@
 
-// document.addEventListener("DOMContentLoaded",
-//     function () {
-//    const menuIcon = 
-//    document.getElementById("menuIcon");
-//    const dropdownMenu = 
-//    document.getElementById("dropdownMenu");
+document.addEventListener("DOMContentLoaded",
+    function () {
+   const menuIcon = 
+   document.getElementById("menuIcon");
+   const dropdownMenu = 
+   document.getElementById("dropdownMenu");
 
-//    if (!menuIcon || !dropdownMenu) {
-//        console.error("No se encontraron los elementos del menú");
-//        return;
-//    }
+   if (!menuIcon || !dropdownMenu) {
+       console.error("No se encontraron los elementos del menú");
+       return;
+   }
 
-//    menuIcon.addEventListener("click", 
-//        function (event) {
-//        event.stopPropagation();
-//        dropdownMenu.classList.toggle("show");
-//    });
+   menuIcon.addEventListener("click", 
+       function (event) {
+       event.stopPropagation();
+       dropdownMenu.classList.toggle("show");
+   });
 
-//    document.addEventListener("click",
-//         function (event) {
-//        if (!
-//            menuIcon.contains(event.target) && !
-//            dropdownMenu.contains(event.target)) {
-//            dropdownMenu.classList.remove("show");
-//    }
-// });
-// });
+   document.addEventListener("click",
+        function (event) {
+       if (!
+           menuIcon.contains(event.target) && !
+           dropdownMenu.contains(event.target)) {
+           dropdownMenu.classList.remove("show");
+   }
+});
+});
 
 
 document.addEventListener("DOMContentLoaded", function () {
