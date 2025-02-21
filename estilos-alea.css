@@ -1,10 +1,21 @@
+body {
+    background: linear-gradient(45deg, #7395f3, #8223db); /* Colores del degradado */
+    height: 100vh; /* Asegura que ocupe toda la pantalla */
+    margin: 0; /* Elimina márgenes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 .boton-magico {
     display: inline-block;
     text-decoration: none;
     background-color: black;
     color: white;
-    padding: 15px 30px;
-    font-size: 18px;
+    padding: 10px 12px;
+    font-size: 10px;
     cursor: pointer;
     border-radius: 12px;
     font-weight: bold;
@@ -13,10 +24,37 @@
     background-clip: padding-box;
     box-shadow: 0px 0px 10px rgba(255, 0, 150, 0.7);
     animation: glow 1.5s infinite alternate;
+    position:absolute;
+     transform: translateX(+50%);
+    /* top: 10px; */
+    left: 10px;
 }
+    
 
 .boton-magico:hover {
     transform: scale(1.1);
-    background: linear-gradient(45deg, rgb(238, 5, 255), rgb(10, 194, 255));
+    background: linear-gradient(45deg, rgb(218, 89, 228), rgb(25, 10, 236));
     color: white;
+}
+
+.containe {
+    text-align: center;
+    border: 2px solid #8a2be2;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    color: #8a2be2;
+}
+
+button {
+    margin-top: 30px;
+    background-color: #8a2be2;
+    color: rgb(15, 15, 15);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }

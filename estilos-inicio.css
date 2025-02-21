@@ -1,0 +1,156 @@
+.boton-gradiente {
+    display: inline-block;
+    text-align: center;
+    background: linear-gradient(45deg, #7B1FA2, #E040FB);
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-left: 650px;
+
+    
+}
+
+.boton-gradiente:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+/* Animación de salida del contenido inicial */
+@keyframes slideLeft {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(-100%);
+        
+    }
+
+
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* Animación de entrada del nuevo contenido */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* Ocultar contenido por defecto */
+.hidden {
+    display: none;
+}
+
+
+/* Aplicar animaciones */
+.fade-out {
+    animation: slideLeft 0.7s forwards;
+}
+
+
+.fade-in {
+    display: flex !important;
+    animation: fadeIn 0.7s forwards;
+}
+.logo {
+    max-width: 30%;  /* La imagen no será más grande que el 60% del ancho del teléfono */
+    height: auto;  /* Mantiene la proporción */
+    margin-top: 140px; /* Espacio arriba */
+    animation: float 3s infinite ease-in-out;
+    margin-left: 500px;
+   
+}
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left:70px ;
+}
+
+
+.purple {
+    color: #8A2BE2;
+    margin-left:530px;
+}
+
+
+.subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+    margin-left: 620px;
+}
+
+
+#startBtn {
+    background: linear-gradient(135deg, #8A2BE2, #DA70D6);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    margin-top: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-left: 660px;
+}
+
+
+#startBtn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 5px 15px rgba(138, 43, 226, 0.5);
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
