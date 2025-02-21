@@ -110,17 +110,6 @@ const renderOrderedTasks = () => {
 
 setDate();
 
-
-
-
-
-
-
-
-
-
-
-
 //sesion de codigo aleatorio 
 const generateBtn = document.getElementById('generateBtn');
 const codeDisplay = document.getElementById('codeDisplay');
@@ -145,3 +134,6 @@ function generateRandomCode() {
 
 // Evento de clic para el botón de generar código
 generateBtn.addEventListener('click', generateRandomCode);
+
+
+
