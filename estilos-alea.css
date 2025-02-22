@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background: linear-gradient(45deg, #7395f3, #8223db); /* Colores del degradado */
     height: 100vh; /* Asegura que ocupe toda la pantalla */
@@ -7,9 +13,40 @@ body {
     align-items: center;
 }
 
+.navbarr {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e0bfbf; /* Color similar al de tu imagen */
+    padding: 20px 40px;
+    /* text-align: center; */
+    /* margin: 30px 20px; */
+    margin-top: 50px;
 
+}
 
-.boton-magico {
+.navbarr ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    gap: 50px;
+}
+
+.navbarr ul li {
+    display: inline;
+}
+
+.navbarr ul li a {
+    text-decoration: none;
+    color: darkpurple;
+    font-weight: bold;
+}
+
+    
+    
+
+/* .boton-magico {
     display: inline-block;
     text-decoration: none;
     background-color: black;
@@ -26,10 +63,10 @@ body {
     animation: glow 1.5s infinite alternate;
     position:absolute;
      transform: translateX(+50%);
-    /* top: 10px; */
+    
     left: 10px;
 }
-    
+     */
 
 .boton-magico:hover {
     transform: scale(1.1);
